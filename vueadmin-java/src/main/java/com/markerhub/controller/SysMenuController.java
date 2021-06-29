@@ -37,4 +37,13 @@ public class SysMenuController extends BaseController {
     }
 
 
+    @GetMapping("list2")
+    public SysMenu list2() {
+
+        SysMenu byId = sysMenuService.selectInfo();
+
+        return byId;
+    }
+
+
 }
