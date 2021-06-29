@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://db201.dev.rs.com:3306/db_cmall?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: fmall
+    password: fmall_user
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
